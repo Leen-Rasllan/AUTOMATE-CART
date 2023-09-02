@@ -45,7 +45,7 @@ describe('cart Test', () => {
         cy.get('#cart_checkout1').click();
         cy.get('#checkout_btn').click();
 
-        cy.get('span.maintext').should('be.visible');
+        cy.get('.maintext').should('contain','Processed')
        
       });
 });
